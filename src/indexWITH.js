@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './markdown.css';
+import './index.css';
+import marked from 'marked';
 
 // To enable open link in new tab
 const renderer = new marked.Renderer();
