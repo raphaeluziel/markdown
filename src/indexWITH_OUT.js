@@ -1,19 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import marked from 'marked';
 
 // To enable open link in new tab
-const renderer = new marked.Renderer();
 
-renderer.link = (address = "#", title = "", content = "") => (
-   `<a target="_blank" href=${address} title=${title}>${content}</a>`
-);
-
-marked.setOptions({
-  gfm: true,
-  breaks: true,
-});
 
 let markdown = `# Heading
 
@@ -40,7 +30,7 @@ let markdown = `# Heading
     "\n" +
     "```"
 
-let markup = marked(markdown, { renderer });
+let markup = markdown;
 
 class Editor extends React.Component {
   constructor(props) {
@@ -52,7 +42,7 @@ class Editor extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
-    let withMarkup = marked(event.target.value, { renderer });
+    let withMarkup = event.target.value;
     this.setState({ value: event.target.value, upValue: withMarkup});
   }
   render() {
