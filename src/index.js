@@ -65,7 +65,7 @@ class Editor extends React.Component {
             </div>
           </div>
           <div class="row">
-            <div class="col-small-6">
+            <div class="col-xs-6">
               <h2>Type your markdown in the box below:</h2>
               <textarea
                 id="editor"
@@ -74,6 +74,8 @@ class Editor extends React.Component {
                 rows="14"
                 cols="80"
               />
+            </div>
+            <div class="col-xs-6">
               <h2>This is how your html will appear:</h2>
               <div id='preview' dangerouslySetInnerHTML = {{__html: this.state.upValue}}/>
             </div>

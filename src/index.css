@@ -1,7 +1,9 @@
-#editor{
-  background-color: lightred;
+textarea{
+  background-color: lightsalmon;
+  border: 4px grooved lightsalmon;
 }
 
 #preview{
   background-color: lightblue;
+  border: 4px grooved blue;
 }
