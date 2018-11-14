@@ -59,12 +59,12 @@ class Editor extends React.Component {
     return (
       <div>
         <div class="container-fluid">
-          <div class="row">
+          <div class="row text-center">
             <div class="col-sm-12">
               <h1>Markdown Previewer</h1>
             </div>
           </div>
-          <div class="row">
+          <div class="row text-center">
             <div class="col-xs-6">
               <h2>Type your markdown in the box below:</h2>
               <textarea
