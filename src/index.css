@@ -1,20 +1,26 @@
+body{
+  margin-top: 60px;
+}
+
 textarea{
   background-color: lightsalmon;
   border: 4px groove lightsalmon;
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
+  padding: 20px;
 }
 
 #preview{
   background-color: lightblue;
   border: 4px groove blue;
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
+  padding: 20px;
 }
 
 blockquote{
   border-left: 10px solid #ccc;
   margin-left: 20px;
   padding: 5px;
-  width: 300px;
+  width: 80%;
 }
