@@ -58,7 +58,7 @@ class Editor extends React.Component {
   render() {
     return (
       <div>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row text-center">
             <div class="col-sm-12">
               <h1>Markdown Previewer</h1>
