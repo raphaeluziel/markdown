@@ -14,5 +14,7 @@ textarea{
 
 blockquote{
   border-left: 10px solid #ccc;
+  margin-left: 20px;
+  padding: 5px;
   width: 300px;
 }
