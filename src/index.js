@@ -58,14 +58,22 @@ class Editor extends React.Component {
   render() {
     return (
       <div>
-        <textarea
-          id="editor"
-          value={this.state.value}
-          onChange={this.handleChange}
-          rows="14"
-          cols="80"
-        />
-        <div id='preview' dangerouslySetInnerHTML = {{__html: this.state.upValue}}/>
+        <div class="container">
+          <div class="row">
+            <div class="col-small-6">
+              <h2>Type your markdown in the box below:</h2>
+              <textarea
+                id="editor"
+                value={this.state.value}
+                onChange={this.handleChange}
+                rows="14"
+                cols="80"
+              />
+              <h2>This is how your html will appear:</h2>
+              <div id='preview' dangerouslySetInnerHTML = {{__html: this.state.upValue}}/>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
