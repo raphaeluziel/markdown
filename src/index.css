@@ -1,12 +1,7 @@
-code{
-  background-color: #eee;
+#editor{
+  background-color: lightred;
 }
-li{
-  color:lightblue;
-}
-blockquote{
-  color:purple;
-}
-pre{
-  color: red;
+
+#preview{
+  background-color: lightblue;
 }
