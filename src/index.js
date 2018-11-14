@@ -59,7 +59,7 @@ class Editor extends React.Component {
     return (
       <div>
         <div class="container">
-          <h1>Markdown Previewer</h1>
+          <h1 align="center">Markdown Previewer</h1>
           <div class="row">
             <div class="col-xs-6">
               <h2>Type your markdown in the box below:</h2>
