@@ -15,36 +15,28 @@ marked.setOptions({
   breaks: true,
 });
 
-let markdown = `# Heading or Title of your page
+let markdown = `# Heading
 
-## This is a subheading of your page
-
-A link to google
+## Subheading
 
 [Google](https://www.google.com)
 
-A quote from physics:
+> Blockquote goes here. Once upon a time in America there were three bears, a mama bear, a papa bear, and a little baby bear.  One day they went into the forest, a tree fell.  Did the tree make a sound?  Nobody really knows.
 
-> Physics is an attempt conceptually to grasp reality as something that is considered to be independent of its being observed. In this sense one speaks of physical reality.
-
-A list of musical groups I like:
-
-1. Led Zeppellin
-2. Cage the elephant
-3. Lou Reed
-4. Peter, Paul and Mary
-
-An image I love:
+1. One
+2. Two
+3. Three
+4. Four
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg/320px-Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg)
 
-**Bold text for emphasis**` +
+**Bold text**` +
     "\n\n" +
-    "`for (let i=0; i < 10; i++)`" +
+    "`Some inline code`" +
     "\n\n" +
-    "```javascript" +
+    "```" +
     "\n" +
-    A code block goes here
+    "Code block which should go on forever\ regardless of how long it is and should not wrap" +
     "\n" +
     "```"
 
