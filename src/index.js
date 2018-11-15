@@ -44,22 +44,7 @@ An image I love:
     "\n\n" +
     "```javascript" +
     "\n" +
-  var i = 1;
-  var output = "";
-
-  while (i <= 10) {
-
-      output += "<h1>" + i + " times table</h1>";
-      output += "<ul>";
-
-        var j = 1;
-        while (j <= 10) {
-          output += "<li>" + j + " x " + i + " = " + j * i;
-          j++;
-      }
-          i++;
-      output += "</ul>";
-  }" +
+    A code block goes here
     "\n" +
     "```"
 
