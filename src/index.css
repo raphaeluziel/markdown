@@ -16,6 +16,11 @@ textarea{
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
+  width: 45%;
+}
+
+#editor{
+  width: 45%;
 }
 
 blockquote{

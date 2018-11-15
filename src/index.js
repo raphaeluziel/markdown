@@ -58,11 +58,11 @@ class Editor extends React.Component {
   render() {
     return (
       <div>
-        <div class="container">
+        <div class="container-fluid">
           <h1 align="center">Markdown Previewer</h1>
           <div class="row">
             <div class="col-xs-6">
-              <h2>Type your markdown in the box below:</h2>
+              <h4>Type your markdown in the box below:</h4>
               <textarea
                 id="editor"
                 value={this.state.value}
@@ -72,7 +72,7 @@ class Editor extends React.Component {
               />
             </div>
             <div class="col-xs-6">
-              <h2>This is how your html will appear:</h2>
+              <h4>This is how your html will appear:</h4>
               <div id='preview' dangerouslySetInnerHTML = {{__html: this.state.upValue}}/>
             </div>
           </div>
