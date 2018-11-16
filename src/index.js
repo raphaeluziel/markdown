@@ -15,29 +15,39 @@ marked.setOptions({
   breaks: true,
 });
 
-let markdown = `# Heading
+let markdown = `# Heading for your page
 
-## Subheading
+## Here you can place a subheading
 
+A link:
 [Google](https://www.google.com)
 
-> Blockquote goes here. Once upon a time in America there were three bears, a mama bear, a papa bear, and a little baby bear.  One day they went into the forest, a tree fell.  Did the tree make a sound?  Nobody really knows.
+A quote from the world of science:
 
-1. One
-2. Two
-3. Three
-4. Four
+> The important thing is not to stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day.
+*-Albert Einstein*
+
+A list of my favorite musical groups:
+1. Led Zepellin
+2. Cage the Elephant
+3. Peter, Paul and Mary
+4. P!nk
+
+An image of a place I would like to visit:
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg/320px-Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg)
 
-**Bold text**` +
-    "\n\n" +
-    "`Some inline code`" +
-    "\n\n" +
+**This is important so I make it bold!**` +
+    "\n\nSome inline code:\n\n" +
+    "`for (let i=0; i<10; i++)`" +
+    "\n\nA block of code:\n\n" +
     "```" +
     "\n" +
-    "Code block which should go on forever\ regardless of how long it is and should not wrap" +
-    "\n" +
+    "While (i < 10)\n" +
+    "{\n" +
+    "   i += 2;\n" +
+    "   document.write(everything.value);\n" +
+    "}\n" +
     "```"
 
 let markup = marked(markdown, { renderer });
@@ -58,23 +68,15 @@ class Editor extends React.Component {
   render() {
     return (
       <div>
-        <div class="container-fluid">
-          <h1 align="center">Markdown Previewer</h1>
-          <div class="row">
-            <div class="col-xs-6">
-              <h4>Type your markdown in the box below:</h4>
-              <textarea
-                id="editor"
-                value={this.state.value}
-                onChange={this.handleChange}
-                rows="14"
-                cols="80"
-              />
-            </div>
-            <div class="col-xs-6">
-              <h4>This is how your html will appear:</h4>
-              <div id='preview' dangerouslySetInnerHTML = {{__html: this.state.upValue}}/>
-            </div>
+        <h1 align="center">Markdown Previewer</h1><br /><br/>
+        <div class="flex-container">
+          <div>
+            <h5>Type your markdown in the box below:</h5>
+            <textarea id="editor" value={this.state.value} onChange={this.handleChange} />
+          </div>
+          <div>
+            <h5>This is the result:</h5>
+            <div id='preview' dangerouslySetInnerHTML = {{__html: this.state.upValue}}/>
           </div>
         </div>
       </div>
